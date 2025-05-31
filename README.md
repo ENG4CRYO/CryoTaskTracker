@@ -52,12 +52,35 @@ dotnet run --project ConsoleApp
 
 ```bash
 add       # Add a new task
-view      # Show all tasks
+-> add "description task"
+
+list      # Show all tasks
+-> list
+
 update    # Update task description
-status    # Change task state (todo, inprogress, done)
-filter    # Show tasks by a specific state
+-> update taskId "new description"
+
 delete    # Delete task by ID
+-> delete taskId
+
+mark    # Change task state (todo, inprogress, done)
+->mark taskId state
+
+list todo    # Show tasks with state todo
+-> list todo
+
+list done    # Show tasks with state done
+-> list todo
+
+list in-progress    # Show tasks with state in-progress
+-> list todo
+
+help #to show all command with functionalty
+->help
+
 exit      # Exit the app
+->exit
+
 ```
 
 ---
